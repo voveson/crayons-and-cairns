@@ -1,0 +1,230 @@
+@import "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic";
+/************ SCROLL BAR ************/
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #E0E0E0;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  z-index: 10000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #009688;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #009688;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #009688;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #009688;
+}
+.parallax-container {
+  height: 400px !important;
+}
+.parallax-container .parallax {
+  top: 100px !important;
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80% !important;
+  }
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /*
+	background: url("@{imagePath}/whitewood2.jpg");
+	background-size: 100% 900px;*/
+  background-color: white;
+  overflow-x: hidden;
+}
+main {
+  flex: 1 0 auto;
+}
+main .container {
+  background-color: white;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Crayon Crumble';
+}
+nav {
+  background-color: #ffffff !important;
+  color: #ef6c00;
+  box-shadow: none !important;
+}
+nav .brand a {
+  font-family: 'Crayon Crumble';
+  color: #009688 !important;
+  font-size: 2.8rem !important;
+  line-height: 56px;
+}
+nav .brand a .amp {
+  color: #ef6c00 !important;
+}
+nav a {
+  font-size: 1.8rem !important;
+  font-family: 'Crayon Crumble';
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  color: #ef6c00 !important;
+}
+nav a:hover {
+  color: #ef6c00 !important;
+}
+nav a i.fa {
+  font-size: 1rem !important;
+  display: inline-block;
+  color: #009688;
+}
+nav #nav-search {
+  display: none;
+  width: 80%;
+}
+nav .input-field input[type=search] + label i {
+  color: #ef6c00;
+  cursor: pointer;
+  font-size: 2rem;
+}
+nav .input-field input[type=search]:hover + label i {
+  font-size: 2.1rem;
+}
+nav .input-field input[type=search]:focus {
+  color: #ef6c00;
+}
+nav .input-field input[type=search]:focus + label i,
+nav .input-field input[type=search]:focus ~ .mdi-navigation-close {
+  color: #ef6c00;
+}
+.nav-wrapper {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.button-collapse {
+  position: absolute !important;
+  right: 10px;
+  padding-right: 10px !important;
+}
+.collapsible-header i {
+  float: right !important;
+}
+a {
+  color: #009688;
+}
+a:hover {
+  color: #00695c;
+}
+.landing-header {
+  position: relative;
+  top: 150px;
+}
+.landing-header h1 {
+  font-size: 8rem;
+  line-height: 7.12rem;
+  text-shadow: 3px 3px 6px #363636;
+}
+.section {
+  box-shadow: 0 0 30px black;
+}
+#sidebar h1,
+#sidebar h2,
+#sidebar h3,
+#sidebar h4 {
+  color: #ef6c00;
+}
+#sidebar img {
+  width: 100%;
+}
+#sidebar p {
+  color: #009688;
+}
+#sidebar .social-icon a {
+  color: #009688;
+  font-size: 2rem;
+}
+#sidebar .social-icon a:hover {
+  color: #00695c;
+}
+#sidebar .input-field input[type=search] {
+  border: none !important;
+}
+#sidebar .input-field input[type=search] + label i {
+  color: #ef6c00;
+  cursor: pointer;
+  font-size: 2rem;
+  position: relative;
+  top: 50px;
+}
+#sidebar .input-field input[type=search]:focus {
+  color: #ef6c00;
+}
+#sidebar .input-field input[type=search]:focus + label i,
+#sidebar .input-field input[type=search]:focus ~ .mdi-navigation-close {
+  color: #ef6c00;
+}
+footer {
+  height: 200px;
+}
+.post-title {
+  color: #ef6c00;
+}
+.post-cover-img {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.post-cover-img img {
+  width: 100%;
+  height: auto;
+}
+.post-content p {
+  color: #5e5e5e;
+}
+.post-content .post-excerpt p {
+  margin-bottom: 0;
+}
+.post-content .post-more {
+  max-height: 0;
+  overflow: hidden;
+}
+.post-content .post-more .post-footer {
+  margin-top: 40px;
+}
+.post-content .post-more .post-footer strong {
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #ef6c00;
+}
+.post-content .post-more .post-footer .post-meta {
+  color: #757575;
+  font-size: 0.9rem;
+}
+.post-content .post-more .post-footer .recd-posts {
+  color: #009688;
+  margin-top: 20px;
+}
+.post-content .post-more .post-footer .recd-posts div {
+  text-align: center;
+}
+.post-content .post-more .post-footer .recd-posts img {
+  width: 100%;
+  height: auto;
+}
