@@ -1,4 +1,8 @@
 @import "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic";
+#mfPreviewBar,
+#mfPreviewBarShow {
+  display: none;
+}
 /************ SCROLL BAR ************/
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -48,14 +52,14 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  /*
-	background: url("@{imagePath}/whitewood2.jpg");
-	background-size: 100% 900px;*/
-  background-color: white;
+  background: url("../images/bryce.jpg") no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 main {
   flex: 1 0 auto;
+  background-color: white;
 }
 main .container {
   background-color: white;
@@ -69,13 +73,13 @@ h4 {
 nav {
   background-color: #ffffff !important;
   color: #ef6c00;
+  overflow: hidden;
   box-shadow: none !important;
 }
 nav .brand a {
   font-family: 'Crayon Crumble';
   color: #009688 !important;
   font-size: 2.8rem !important;
-  line-height: 56px;
 }
 nav .brand a .amp {
   color: #ef6c00 !important;
@@ -97,7 +101,9 @@ nav a i.fa {
 }
 nav #nav-search {
   display: none;
-  width: 80%;
+  width: 450px;
+  height: 66px;
+  overflow: hidden;
 }
 nav .input-field input[type=search] + label i {
   color: #ef6c00;
@@ -114,8 +120,10 @@ nav .input-field input[type=search]:focus + label i,
 nav .input-field input[type=search]:focus ~ .mdi-navigation-close {
   color: #ef6c00;
 }
+nav ul.dropdown-content {
+  z-index: 100 !important;
+}
 .nav-wrapper {
-  box-shadow: none;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 .button-collapse {
@@ -126,17 +134,21 @@ nav .input-field input[type=search]:focus ~ .mdi-navigation-close {
 .collapsible-header i {
   float: right !important;
 }
+.header-img-container img {
+  width: 100%;
+  height: auto;
+}
 a {
   color: #009688;
 }
 a:hover {
   color: #00695c;
 }
-.landing-header {
-  position: relative;
-  top: 150px;
-}
 .landing-header h1 {
+  z-index: 1 !important;
+  padding-top: 200px;
+  margin-bottom: 100px;
+  padding-bottom: 0;
   font-size: 8rem;
   line-height: 7.12rem;
   text-shadow: 3px 3px 6px #363636;

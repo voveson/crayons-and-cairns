@@ -22,113 +22,100 @@
 
 <body>
 	<header>
-		<div class="hide-on-med-and-down">
+		<nav class="hide-on-med-and-down">
 			<div class="nav-wrapper">
-				<nav>
-					<div class="row">
-						<div class="col m4">
-							<!--
-						<form>
-					        <div class="input-field">
-					          <input id="search" type="search" required placeholder="search this site...">
-					          <label for="search"><i class="mdi-action-search"></i></label>
-					          <i class="mdi-navigation-close"></i>
-					        </div>
-					      </form>-->
-					      	<div class="brand">
-						      	<a href="">
-						      		Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
-						      	</a>
-					      	</div>
-					    </div>
-					    <div class="col m8">
-					    	<div id="nav-search" class="right input-field">
-					    		<form>
-					          		<input id="search" type="search" required placeholder="search this site...">
-					          		<label for="search"><i class="mdi-action-search"></i></label>
-					          		<i id="nav-search-close" class="mdi-navigation-close"></i>
-					    		</form>
-					    	</div>
-					      	<ul class="right" id="main-nav-links">
-					        	<li><a href="#">Home</a></li>
-					        	<li><a class="dropdown-button" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
-					        	<li><a href="#">About</a></li>
-					        	<li><a href="#">Contact</a></li>
-					        	<li id="nav-search-link"><a href="#"><i class="mdi-action-search"></i></a></li>
-					      	</ul>
-					      	<ul id="dropdown1" class="dropdown-content">
-							  	<li>
-					              	<a href="#!">Camping with Kids</a>
-				              	</li>
-					            <li>
-					            	<a href="#!">Campfire Recipes</a>
-					            </li>
-					            <li>
-					              	<a href="#!">Destinations</a>
-					            </li>
-					            <li>
-					              	<a href="#!">Hiking</a>
-					            </li>
-							</ul>
-				      	</div>
-			  		</div>
-			    </div>
-			</nav>
-		</div>
-		<!-- Mobile Navigation -->
-		<div class="navbar-fixed hide-on-large-only">
-			<nav id="mobile-nav">
-				<div class="nav-wrapper">
-					<div class="brand left">
-				      	<a href="">
-				      		Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
-				      	</a>
-			      	</div>
-					<a href="#" data-activates="mobile-nav-links" class="button-collapse ">
-						<i class="mdi-navigation-menu"></i>
-					</a>
-					<ul class="side-nav" id="mobile-nav-links">
-						<li><a href="#">Home</a></li>
-						<li class="divider"></li>
-						<li class="no-padding">
-					      <ul class="collapsible collapsible-accordion">
-					        <li>
-					          <a class="collapsible-header account-actions">Categories&nbsp;<i class="fa fa-caret-down"></i></a></a>
-					          <div class="collapsible-body">
-					            <ul>
-					              <li>
-					              	<a href="#!">Camping with Kids</a>
-					              </li>
-					              <li>
-					              	<a href="#!">Campfire Recipes</a>
-					              </li>
-					              <li>
-					              	<a href="#!">Destinations</a>
-					              </li>
-					              <li>
-					              	<a href="#!">Hiking</a>
-					              </li>
-					            </ul>
-					          </div>
-					        </li>
-					      </ul>
-					    </li>
-					    <li class="divider"></li>
-					    <li><a href="#">About</a></li>
-					    <li class="divider"></li>
-					    <li><a href="#">Contact</a></li>
+				<div class="left brand">
+			      	<a href="">
+			      		Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
+			      	</a>
+		      	</div>
+		      	<div class="right">
+		      		<div id="nav-search" class="right input-field">
+			    		<form>
+			          		<input id="search" type="search" required placeholder="search this site...">
+			          		<label for="search"><i class="mdi-action-search"></i></label>
+			          		<i id="nav-search-close" class="mdi-navigation-close"></i>
+			    		</form>
+			    	</div>
+			      	<ul class="right" id="main-nav-links">
+			        	<li><a href="#">Home</a></li>
+			        	<li><a class="dropdown-button" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
+			        	<li><a href="#">About</a></li>
+			        	<li><a href="#">Contact</a></li>
+			        	<li id="nav-search-link"><a href="#"><i class="mdi-action-search"></i></a></li>
 			      	</ul>
-			    </div>
-		    </nav>
-		</div>		
+			      	<ul id="dropdown1" class="dropdown-content">
+					  	<li>
+			              	<a href="#!">Camping with Kids</a>
+		              	</li>
+			            <li>
+			            	<a href="#!">Campfire Recipes</a>
+			            </li>
+			            <li>
+			              	<a href="#!">Destinations</a>
+			            </li>
+			            <li>
+			              	<a href="#!">Hiking</a>
+			            </li>
+					</ul>
+		      	</div>
+			</div>
+		</nav>
+
+		<!-- Mobile Navigation -->
+		<nav id="mobile-nav" class="hide-on-large-only">
+			<div class="nav-wrapper">
+				<div class="brand left">
+			      	<a href="">
+			      		Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
+			      	</a>
+		      	</div>
+		      	<a href="#" data-activates="mobile-nav-links" class="button-collapse ">
+					<i class="mdi-navigation-menu"></i>
+				</a>
+				<ul class="side-nav" id="mobile-nav-links">
+					<li><a href="#">Home</a></li>
+					<li class="divider"></li>
+					<li class="no-padding">
+				      <ul class="collapsible collapsible-accordion">
+				        <li>
+				          <a class="collapsible-header account-actions">Categories&nbsp;<i class="fa fa-caret-down"></i></a></a>
+				          <div class="collapsible-body">
+				            <ul>
+				              <li>
+				              	<a href="#!">Camping with Kids</a>
+				              </li>
+				              <li>
+				              	<a href="#!">Campfire Recipes</a>
+				              </li>
+				              <li>
+				              	<a href="#!">Destinations</a>
+				              </li>
+				              <li>
+				              	<a href="#!">Hiking</a>
+				              </li>
+				            </ul>
+				          </div>
+				        </li>
+				      </ul>
+				    </li>
+				    <li class="divider"></li>
+				    <li><a href="#">About</a></li>
+				    <li class="divider"></li>
+				    <li><a href="#">Contact</a></li>
+		      	</ul>
+			</div>
+		</nav>
+		<div class="landing-header center-align">
+	    	<h1 class="white-text">Crayons &amp; Cairns</h1>
+	    </div>	
 	</header>
-	<main>	
-		<div class="parallax-container">			
-			<div class="parallax"><img src="<?php bloginfo('template_url'); ?>/images/bryce.jpg"></div>
-			<div class="landing-header center-align">
-		    	<h1 class="white-text">Crayons &amp; Cairns</h1>
-		    </div>
+	<main>
+	<!--	
+		<div class="header-img-container">
+			<img src="<?php bloginfo('template_url'); ?>/images/bryce.jpg">
 		</div>
+	-->		
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m12 l9">
