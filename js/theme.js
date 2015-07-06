@@ -63,5 +63,15 @@ $(function() {
 		var $more = $(this).closest('div.post-content').find('.post-more');
 		$more.css({maxHeight: 'none'});
 		$(this).hide();
-	})
+	});
+
+	$('#back-to-top-container').on('click', function(e) {
+		$('body').animate({scrollTop: 0});
+	});
+
+	Materialize.scrollFire([{
+		selector: 	'main',
+		offset: 	300,
+		callback: 	"$('#back-to-top-container').fadeIn();"
+	}]);
 });

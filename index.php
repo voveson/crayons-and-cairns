@@ -21,6 +21,9 @@
 </head>
 
 <body>
+	<div id="back-to-top-container">
+		<h1><i class="fa fa-chevron-circle-up"></i></h1>
+	</div>
 	<header>
 		<nav class="hide-on-med-and-down">
 			<div class="nav-wrapper">

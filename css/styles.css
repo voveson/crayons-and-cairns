@@ -144,6 +144,9 @@ a {
 a:hover {
   color: #00695c;
 }
+.landing-header {
+  z-index: 1 !important;
+}
 .landing-header h1 {
   z-index: 1 !important;
   padding-top: 200px;
@@ -191,6 +194,20 @@ a:hover {
 #sidebar .input-field input[type=search]:focus + label i,
 #sidebar .input-field input[type=search]:focus ~ .mdi-navigation-close {
   color: #ef6c00;
+}
+#back-to-top-container {
+  color: #009688;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+#back-to-top-container h1 {
+  padding: 0;
+  margin: 0;
+}
+#back-to-top-container h1 i {
+  text-shadow: 1px 1px 4px #424242;
 }
 footer {
   height: 200px;
