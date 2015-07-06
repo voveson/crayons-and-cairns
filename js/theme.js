@@ -24,6 +24,8 @@ var showOptions = {
 	}
 }
 
+var backToTopVisible = false;
+
 $(function() {
 	$('.parallax').parallax();
 
@@ -69,9 +71,26 @@ $(function() {
 		$('body, html').animate({scrollTop: 0});
 	});
 
+	$(window).scroll(function() {
+		var scroll = parseInt($(window).scrollTop());
+		if (scroll > 400)
+		{
+			if(!backToTopVisible)
+			{
+				backToTopVisible = true;
+				$('#back-to-top-container').fadeIn('slow');
+			}
+		}
+		else
+		{
+			backToTopVisible = false;
+			$('#back-to-top-container').fadeOut('slow');
+		}
+	});
+/*
 	Materialize.scrollFire([{
 		selector: 	'main',
 		offset: 	400,
-		callback: 	"$('#back-to-top-container').fadeIn();"
-	}]);
+		callback: 	""
+	}]);*/
 });
