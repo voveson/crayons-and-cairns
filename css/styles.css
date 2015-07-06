@@ -142,7 +142,7 @@ a {
   color: #009688;
 }
 a:hover {
-  color: #00695c;
+  color: #197c70;
 }
 .landing-header {
   z-index: 1 !important;
@@ -176,7 +176,7 @@ a:hover {
   font-size: 2rem;
 }
 #sidebar .social-icon a:hover {
-  color: #00695c;
+  color: #197c70;
 }
 #sidebar .input-field input[type=search] {
   border: none !important;
@@ -201,13 +201,17 @@ a:hover {
   bottom: 20px;
   right: 20px;
   display: none;
+  cursor: pointer;
+}
+#back-to-top-container:hover {
+  color: #197c70;
 }
 #back-to-top-container h1 {
   padding: 0;
   margin: 0;
 }
 #back-to-top-container h1 i {
-  text-shadow: 1px 1px 4px #424242;
+  text-shadow: 2px 2px 6px #808080;
 }
 footer {
   height: 200px;

@@ -66,12 +66,12 @@ $(function() {
 	});
 
 	$('#back-to-top-container').on('click', function(e) {
-		$('body').animate({scrollTop: 0});
+		$('body, html').animate({scrollTop: 0});
 	});
 
 	Materialize.scrollFire([{
 		selector: 	'main',
-		offset: 	300,
+		offset: 	400,
 		callback: 	"$('#back-to-top-container').fadeIn();"
 	}]);
 });
