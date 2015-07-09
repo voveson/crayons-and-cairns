@@ -50,7 +50,7 @@
 }
 @media only screen and (min-width: 601px) {
   html body {
-    background: url("../images/desktop_header.jpg") no-repeat;
+    background: url("../images/desktop_header.JPG") no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
   }
@@ -66,7 +66,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: url("../images/mobile_header.jpg") no-repeat;
+  background: url("../images/mobile_header.JPG") no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
   overflow-x: hidden;
