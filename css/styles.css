@@ -57,6 +57,15 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 601px) {
+  body nav,
+  body nav .nav-wrapper i,
+  body nav a.button-collapse,
+  body nav a.button-collapse i {
+    height: 85px !important;
+    line-height: 85px !important;
+  }
+}
 main {
   flex: 1 0 auto;
   background-color: white;
@@ -68,12 +77,15 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Crayon Crumble';
+  font-family: 'Architects Daughter', cursive;
 }
 nav {
   background-color: #ffffff !important;
   color: #ef6c00;
   box-shadow: none !important;
+}
+nav .brand {
+  padding-left: 77px;
 }
 nav .brand a {
   font-family: 'Crayon Crumble';
@@ -83,9 +95,20 @@ nav .brand a {
 nav .brand a .amp {
   color: #ef6c00 !important;
 }
+nav .brand img {
+  width: 180px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav .right {
+  padding-right: 60px;
+}
 nav a {
-  font-size: 1.8rem !important;
-  font-family: 'Crayon Crumble';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem !important;
+  font-family: 'Architects Daughter', cursive;
   padding-left: 25px !important;
   padding-right: 25px !important;
   color: #ef6c00 !important;
@@ -102,6 +125,7 @@ nav #nav-search {
   display: none;
   width: 450px;
   height: 66px;
+  padding-right: 60px;
   overflow: hidden;
 }
 nav .input-field input[type=search] + label i {
@@ -121,6 +145,10 @@ nav .input-field input[type=search]:focus ~ .mdi-navigation-close {
 }
 nav ul.dropdown-content {
   z-index: 100 !important;
+}
+nav ul.dropdown-content li > a {
+  font-weight: normal !important;
+  text-transform: none !important;
 }
 .nav-wrapper {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -144,6 +172,7 @@ a:hover {
   color: #197c70;
 }
 .landing-header {
+  height: 400px;
   z-index: 1 !important;
 }
 .landing-header h1 {
@@ -227,36 +256,40 @@ footer {
   width: 100%;
   height: auto;
 }
-.post-content p {
+.cc-post-content p,
+.cc-post-content div.post-more {
   color: #5e5e5e;
 }
-.post-content .post-excerpt p {
+.cc-post-content .cc-post-excerpt p {
   margin-bottom: 0;
 }
-.post-content .post-more {
-  max-height: 0;
-  overflow: hidden;
+.cc-post-content .cc-post-more {
+  display: none;
 }
-.post-content .post-more .post-footer {
+.cc-post-content .cc-post-more div.post-more {
+  margin-top: 15px;
+}
+.cc-post-content .cc-post-more .cc-post-footer {
   margin-top: 40px;
 }
-.post-content .post-more .post-footer strong {
+.cc-post-content .cc-post-more .cc-post-footer strong {
   font-size: 1.35rem;
   font-weight: bold;
   color: #ef6c00;
 }
-.post-content .post-more .post-footer .post-meta {
+.cc-post-content .cc-post-more .cc-post-footer .cc-post-meta {
   color: #757575;
   font-size: 0.9rem;
 }
-.post-content .post-more .post-footer .recd-posts {
+.cc-post-content .cc-post-more .cc-post-footer .recd-posts {
   color: #009688;
   margin-top: 20px;
 }
-.post-content .post-more .post-footer .recd-posts div {
+.cc-post-content .cc-post-more .cc-post-footer .recd-posts div {
   text-align: center;
 }
-.post-content .post-more .post-footer .recd-posts img {
+.cc-post-content .cc-post-more .cc-post-footer .recd-posts img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
