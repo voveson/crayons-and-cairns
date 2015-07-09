@@ -18,7 +18,7 @@
 			<div class="nav-wrapper">
 				<div class="left brand">
 			      	<a href="">
-			      		<img src="<?php bloginfo('template_url'); ?>/images/candc3.png">
+			      		<img src="<?php bloginfo('template_url'); ?>/images/candc4.png">
 			      	</a>
 		      	</div>
 		      	<div class="right">
@@ -58,9 +58,6 @@
 		<nav id="mobile-nav" class="hide-on-large-only">
 			<div class="nav-wrapper">
 				<div class="brand left">
-			      	<a href="">
-			      		Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
-			      	</a>
 		      	</div>
 		      	<a href="#" data-activates="mobile-nav-links" class="button-collapse ">
 					<i class="mdi-navigation-menu"></i>

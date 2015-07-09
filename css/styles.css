@@ -48,23 +48,28 @@
     width: 80% !important;
   }
 }
+@media only screen and (min-width: 601px) {
+  html body {
+    background: url("../images/desktop_header.jpg") no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+  }
+  html nav,
+  html nav .nav-wrapper i,
+  html nav a.button-collapse,
+  html nav a.button-collapse i {
+    height: 110px !important;
+    line-height: 110px !important;
+  }
+}
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: url("../images/bryce.jpg") no-repeat;
+  background: url("../images/mobile_header.jpg") no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
   overflow-x: hidden;
-}
-@media only screen and (min-width: 601px) {
-  body nav,
-  body nav .nav-wrapper i,
-  body nav a.button-collapse,
-  body nav a.button-collapse i {
-    height: 85px !important;
-    line-height: 85px !important;
-  }
 }
 main {
   flex: 1 0 auto;
@@ -96,7 +101,7 @@ nav .brand a .amp {
   color: #ef6c00 !important;
 }
 nav .brand img {
-  width: 180px;
+  width: 230px;
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -172,7 +177,7 @@ a:hover {
   color: #4db6ac;
 }
 .landing-header {
-  height: 400px;
+  height: 70vh;
   z-index: 1 !important;
 }
 .landing-header h1 {
