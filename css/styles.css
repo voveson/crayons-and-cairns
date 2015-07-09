@@ -169,7 +169,7 @@ a {
   color: #009688;
 }
 a:hover {
-  color: #197c70;
+  color: #4db6ac;
 }
 .landing-header {
   height: 400px;
@@ -204,7 +204,7 @@ a:hover {
   font-size: 2rem;
 }
 #sidebar .social-icon a:hover {
-  color: #197c70;
+  color: #4db6ac;
 }
 #sidebar .input-field input[type=search] {
   border: none !important;
@@ -218,6 +218,8 @@ a:hover {
 }
 #sidebar .input-field input[type=search]:focus {
   color: #ef6c00;
+  border-radius: 10px !important;
+  box-shadow: 0 0 15px #AAAAAA;
 }
 #sidebar .input-field input[type=search]:focus + label i,
 #sidebar .input-field input[type=search]:focus ~ .mdi-navigation-close {
@@ -232,7 +234,7 @@ a:hover {
   cursor: pointer;
 }
 #back-to-top-container:hover {
-  color: #197c70;
+  color: #4db6ac;
 }
 #back-to-top-container h1 {
   padding: 0;

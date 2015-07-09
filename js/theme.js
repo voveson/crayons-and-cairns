@@ -31,11 +31,11 @@ $(function() {
 
 	$('#sidebar-search').focus(function() {
 		var $this = $(this);
-		$this.closest('div.input-field').addClass('z-depth-1');
+		//$this.closest('div.input-field').addClass('z-depth-1');
 		$this.attr('placeholder', '');
 	}).focusout(function() {
 		var $this = $(this);
-		$this.closest('div.input-field').removeClass('z-depth-1');
+		//$this.closest('div.input-field').removeClass('z-depth-1');
 		$this.attr('placeholder', 'search this site...');
 	});
 

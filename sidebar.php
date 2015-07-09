@@ -7,7 +7,7 @@
 	
 	<hr>
 	<form>
-	    <div class="input-field">
+	    <div class="input-field" id="sidebar-search-container">
 	      	<input id="sidebar-search" type="search" required placeholder="search this site...">
 	      	<label for="sidebar-search"><i class="mdi-action-search"></i></label>
 	      	<i class="mdi-navigation-close"></i>

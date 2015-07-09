@@ -7,18 +7,6 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script type="text/javascript">
-	    (function() {
-	        var path = '//easy.myfonts.net/v2/js?sid=200376(font-family=Crayon+Crumble)&key=GEjpgV3uDu',
-	            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-	            trial = document.createElement('script');
-	        trial.type = 'text/javascript';
-	        trial.async = true;
-	        trial.src = protocol + path;
-	        var head = document.getElementsByTagName("head")[0];
-	        head.appendChild(trial);
-	    })();
-	</script>
 </head>
 
 <body>
@@ -30,7 +18,7 @@
 			<div class="nav-wrapper">
 				<div class="left brand">
 			      	<a href="">
-			      		<img src="<?php bloginfo('template_url'); ?>/images/candc-logo.jpg">
+			      		<img src="<?php bloginfo('template_url'); ?>/images/candc3.png">
 			      	</a>
 		      	</div>
 		      	<div class="right">
@@ -115,11 +103,6 @@
 	    </div>	
 	</header>
 	<main>
-	<!--	
-		<div class="header-img-container">
-			<img src="<?php bloginfo('template_url'); ?>/images/bryce.jpg">
-		</div>
-	-->		
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m12 l9">
@@ -128,7 +111,8 @@
 					<div class="post">
 						<h1 class="post-title center-align"><?php the_title(); ?></h1>
 						<div class="post-cover-img">
-							<img src="http://onmilwaukee.com//images/articles/ca/camping/camping_fullsize_story1.jpg" class=" ">
+							<?php the_post_thumbnail(); ?>
+							<!--<img src="http://onmilwaukee.com//images/articles/ca/camping/camping_fullsize_story1.jpg" class=" ">-->
 						</div>
 						<div class="cc-post-content">
 							<div class="cc-post-excerpt">
@@ -139,17 +123,33 @@
 								<?php the_content() ?>
 								<div class="cc-post-footer">
 									<div class="cc-post-meta">
-										Posted on <?php the_time('F jS, Y') ?> by Laura
+										Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?>
 									</div>
 									<div class="recd-posts">
+										<strong>You might also like:</strong><br>
+										<div class="row">
+											<div class="col s6 m4 l3">
+												<img class="recd-post-img" src="https://bibledaily.files.wordpress.com/2009/09/off-road.jpg">
+												Curabitur Consectetur velit Sed
+											</div>
+											<div class="col s6 m4 l3">
+												<img class="recd-post-img" src="http://www.flyfishnewengland.com/lake-boat.jpg">
+												Amet Fermentum Condimentum
+											</div>
+											<div class="col s6 m4 l3">
+												<img class="recd-post-img" src="http://alterra.cc/media/turobj/icon/Grand_Canyon___Canyons_of_Utah_attr_37.jpg">
+												Augue Diam Euismod
+											</div>
+											<div class="col s6 m4 l3">
+												<img class="recd-post-img" src="http://blog.emsoutdoors.com/wp-content/uploads/2013/03/Camelbacks.jpg">
+												Tempor Purus Pharetra
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<small class="grey-text text-darken-1">Posted on <?php the_time('F jS, Y') ?></small>
-					
 					<hr> <?php endwhile; else: ?>
 					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 					<?php endif; ?><!-- The Loop -->
