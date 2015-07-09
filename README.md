@@ -1,2 +1,2 @@
 # Crayons & Cairns
-A custom Wordpress theme for Crayons &amp; Cairns blog
+A custom-built Wordpress theme for Crayons &amp; Cairns blog
