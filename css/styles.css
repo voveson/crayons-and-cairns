@@ -61,6 +61,12 @@
     height: 110px !important;
     line-height: 110px !important;
   }
+  html nav .brand,
+  html nav .nav-wrapper i .brand,
+  html nav a.button-collapse .brand,
+  html nav a.button-collapse i .brand {
+    padding-left: 77px !important;
+  }
 }
 body {
   display: flex;
@@ -88,9 +94,6 @@ nav {
   background-color: #ffffff !important;
   color: #ef6c00;
   box-shadow: none !important;
-}
-nav .brand {
-  padding-left: 77px;
 }
 nav .brand a {
   font-family: 'Aracne Stamp';

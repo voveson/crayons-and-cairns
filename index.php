@@ -70,8 +70,11 @@
 		<nav id="mobile-nav" class="hide-on-large-only">
 			<div class="nav-wrapper">
 				<div class="brand left">
+					<a href="/">
+						Crayons&nbsp;<span class="amp">&amp;</span>&nbsp;Cairns
+					</a>
 		      	</div>
-		      	<a href="#" data-activates="mobile-nav-links" class="button-collapse ">
+		      	<a href="#" data-activates="mobile-nav-links" class="button-collapse orange-text text-darken-2">
 					<i class="mdi-navigation-menu"></i>
 				</a>
 				<ul class="side-nav" id="mobile-nav-links">
