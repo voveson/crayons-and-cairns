@@ -7,6 +7,18 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script type="text/javascript">
+	    (function() {
+	        var path = '//easy.myfonts.net/v2/js?sid=229610(font-family=Aracne)&sid=229612(font-family=Aracne+Light)&sid=264533(font-family=Aracne+Stamp)&key=JIldsgJFxr',
+	            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+	            trial = document.createElement('script');
+	        trial.type = 'text/javascript';
+	        trial.async = true;
+	        trial.src = protocol + path;
+	        var head = document.getElementsByTagName("head")[0];
+	        head.appendChild(trial);
+	    })();
+	</script>
 </head>
 
 <body>
@@ -30,10 +42,10 @@
 			    		</form>
 			    	</div>
 			      	<ul class="right" id="main-nav-links">
-			        	<li><a href="#">Home</a></li>
-			        	<li><a class="dropdown-button" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
-			        	<li><a href="#">About</a></li>
-			        	<li><a href="#">Contact</a></li>
+			        	<li><a href="#" class="grey-text">Home</a></li>
+			        	<li><a class="dropdown-button grey-text text-darken-1" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
+			        	<li><a class="grey-text text-darken-2"href="#">About</a></li>
+			        	<li><a class="grey-text text-darken-3" href="#">Contact</a></li>
 			        	<li id="nav-search-link"><a href="#"><i class="mdi-action-search"></i></a></li>
 			      	</ul>
 			      	<ul id="dropdown1" class="dropdown-content">

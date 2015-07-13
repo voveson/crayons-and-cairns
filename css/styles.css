@@ -82,7 +82,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Aracne Stamp';
 }
 nav {
   background-color: #ffffff !important;
@@ -93,7 +93,7 @@ nav .brand {
   padding-left: 77px;
 }
 nav .brand a {
-  font-family: 'Crayon Crumble';
+  font-family: 'Aracne Stamp';
   color: #009688 !important;
   font-size: 2.8rem !important;
 }
@@ -113,18 +113,25 @@ nav a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1rem !important;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Aracne Stamp';
   padding-left: 25px !important;
   padding-right: 25px !important;
-  color: #ef6c00 !important;
-}
-nav a:hover {
-  color: #ef6c00 !important;
+  /*
+		&:hover {
+			color: @darkOrange !important;
+		}
+*/
 }
 nav a i.fa {
   font-size: 1rem !important;
   display: inline-block;
   color: #009688;
+}
+nav #nav-search-link a {
+  color: #ef6c00 !important;
+}
+nav #nav-search-link a:hover {
+  color: #ef6c00 !important;
 }
 nav #nav-search {
   display: none;
