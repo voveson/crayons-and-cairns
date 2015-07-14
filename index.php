@@ -71,7 +71,7 @@
 			<div class="nav-wrapper">
 				<div class="brand left">
 					<a href="/">
-						Crayons&nbsp;<span class="amp">&amp;</span>&nbsp;Cairns
+						Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
 					</a>
 		      	</div>
 		      	<a href="#" data-activates="mobile-nav-links" class="button-collapse orange-text text-darken-2">
@@ -109,10 +109,10 @@
 				    <li><a href="#">Contact</a></li>
 		      	</ul>
 			</div>
-		</nav>
+		</nav><!--
 		<div class="landing-header center-align">
-	    	<!--<h1 class="white-text">Crayons &amp; Cairns</h1>-->
-	    </div>	
+	    	<h1 class="white-text">Crayons &amp; Cairns</h1>
+	    </div>-->
 	</header>
 	<main>
 		<div class="container">
@@ -219,7 +219,6 @@
 						</div>
 					</div>-->
 				</div>
-				<hr class="hide-on-med-and-up">
 				<div class="col s12 m12 l3">
 					<?php get_sidebar(); ?>
 				</div>

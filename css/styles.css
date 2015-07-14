@@ -48,7 +48,7 @@
     width: 80% !important;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 992px) {
   html body {
     background: url("../images/desktop_header.JPG") no-repeat;
     background-size: 100% auto;
@@ -78,6 +78,8 @@ body {
   overflow-x: hidden;
 }
 main {
+  position: relative;
+  top: 70vh;
   flex: 1 0 auto;
   background-color: white;
 }
@@ -234,7 +236,7 @@ a:hover {
 #sidebar .input-field input[type=search]:focus {
   color: #ef6c00;
   border-radius: 10px !important;
-  box-shadow: 0 0 15px #AAAAAA;
+  box-shadow: inset 0 0 4px #AAAAAA;
 }
 #sidebar .input-field input[type=search]:focus + label i,
 #sidebar .input-field input[type=search]:focus ~ .mdi-navigation-close {
@@ -247,6 +249,7 @@ a:hover {
   right: 20px;
   display: none;
   cursor: pointer;
+  z-index: 1000;
 }
 #back-to-top-container:hover {
   color: #4db6ac;
