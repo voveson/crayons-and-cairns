@@ -32,7 +32,7 @@ $(function() {
 	var img = new Image();
 	
 	img.onload = function() {
-		$('main').css('top', compute_main_top(img));
+		$('.main-content').css('margin-top', compute_main_top(img));
 	};
 
 	img.src = $('body').css('background-image').replace(/url\(|\)$|"/ig, '');

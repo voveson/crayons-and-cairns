@@ -78,12 +78,14 @@ body {
   overflow-x: hidden;
 }
 main {
-  position: relative;
-  top: 70vh;
   flex: 1 0 auto;
-  background-color: white;
 }
-main .container {
+main .main-content {
+  background-color: white;
+  margin-top: 70vh;
+  padding-bottom: 20px;
+}
+main .main-content .container {
   background-color: white;
 }
 h1,
@@ -263,6 +265,8 @@ a:hover {
   text-shadow: 2px 2px 6px #808080;
 }
 footer {
+  position: relative;
+  bottom: 0;
   height: 200px;
 }
 .post-title {
