@@ -42,10 +42,10 @@
 			    		</form>
 			    	</div>
 			      	<ul class="right" id="main-nav-links">
-			        	<li><a href="#" class="grey-text">Home</a></li>
-			        	<li><a class="dropdown-button grey-text text-darken-1" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
-			        	<li><a class="grey-text text-darken-2"href="#">About</a></li>
-			        	<li><a class="grey-text text-darken-3" href="#">Contact</a></li>
+			        	<li><a href="#">Home</a></li>
+			        	<li><a class="dropdown-button" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
+			        	<li><a href="#">About</a></li>
+			        	<li><a href="#">Contact</a></li>
 			        	<li id="nav-search-link"><a href="#"><i class="mdi-action-search"></i></a></li>
 			      	</ul>
 			      	<ul id="dropdown1" class="dropdown-content">

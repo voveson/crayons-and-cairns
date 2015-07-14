@@ -28,7 +28,9 @@ var backToTopVisible = false;
 
 $(function() {
 
+	// Compute the size of the background image
 	var img = new Image();
+	
 	img.onload = function() {
 		$('main').css('top', compute_main_top(img));
 	};

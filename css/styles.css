@@ -117,10 +117,11 @@ nav .right {
 nav a {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.1rem !important;
+  font-size: 1.3rem !important;
   font-family: 'Aracne Stamp';
   padding-left: 25px !important;
   padding-right: 25px !important;
+  color: #4d4d4d !important;
   /*
 		&:hover {
 			color: @darkOrange !important;
