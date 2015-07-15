@@ -12,3 +12,8 @@ function get_post_more()
 
 	return (substr($content, $split_index));
 }
+
+function get_featured_img_url()
+{
+	return wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) );
+}

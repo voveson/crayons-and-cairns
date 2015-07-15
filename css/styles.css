@@ -294,6 +294,9 @@ footer {
 .cc-post-content .cc-post-more {
   display: none;
 }
+.cc-post-content .cc-post-more.single {
+  display: block;
+}
 .cc-post-content .cc-post-more div.post-more {
   margin-top: 15px;
 }
