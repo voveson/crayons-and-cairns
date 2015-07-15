@@ -20,6 +20,7 @@
 	        head.appendChild(trial);
 	    })();
 	</script>
+	<?php wp_head() ?>
 </head>
 
 <body>
@@ -45,7 +46,7 @@
 			      	<ul class="right" id="main-nav-links">
 			        	<li><a href="#">Home</a></li>
 			        	<li><a class="dropdown-button" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
-			        	<li><a href="#">About</a></li>
+			        	<li><a href="<?= get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
 			        	<li><a href="#">Contact</a></li>
 			        	<li id="nav-search-link"><a href="#"><i class="mdi-action-search"></i></a></li>
 			      	</ul>
@@ -138,6 +139,10 @@
 									<div class="cc-post-footer">
 										<div class="cc-post-meta">
 											Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?>
+										</div>
+										<div class="cc-sharing">
+											Share this post:
+											<?php echo do_shortcode("[TheChamp-Sharing]"); ?>
 										</div>
 										<div class="recd-posts">
 											<strong>You might also like:</strong><br>

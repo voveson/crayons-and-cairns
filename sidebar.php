@@ -21,10 +21,10 @@
 			<a href="#"><i class="fa fa-facebook"></i></a>
 		</div>
 		<div class="col s4 center-align social-icon">
-			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="https://twitter.com/crayonsncairns" target="_blank"><i class="fa fa-twitter"></i></a>
 		</div>
 		<div class="col s4 left-align social-icon">
-			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="http://instagram.com/_u/crayonsandcairns/" target="_blank"><i class="fa fa-instagram"></i></a>
 		</div>
 	</div>
 
