@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
-	<title>Crayons &amp; Cairns</title>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<title><?php the_title(); ?> | Crayons &amp; Cairns</title>
+	<?php endwhile; ?>
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/materialize.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/animate.min.css">
@@ -9,7 +11,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<?php while ( have_posts() ) : the_post(); ?>
-		<meta property="og:image" content="<?=  get_featured_img_url(); ?>" />
+		<meta property="og:image" content="<?= get_featured_img_url(); ?>" />
 	<?php endwhile; ?>
 	<script type="text/javascript">
 	    (function() {
@@ -34,7 +36,7 @@
 		<nav class="hide-on-med-and-down">
 			<div class="nav-wrapper">
 				<div class="left brand">
-			      	<a href="">
+			      	<a href="<?= get_home_url(); ?>">
 			      		<img src="<?php bloginfo('template_url'); ?>/images/candc4.png">
 			      	</a>
 		      	</div>
@@ -47,7 +49,7 @@
 			    		</form>
 			    	</div>
 			      	<ul class="right" id="main-nav-links">
-			        	<li><a href="#">Home</a></li>
+			        	<li><a href="<?= get_home_url(); ?>">Home</a></li>
 			        	<li><a class="dropdown-button" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
 			        	<li><a href="<?= get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
 			        	<li><a href="#">Contact</a></li>
@@ -58,13 +60,16 @@
 			              	<a href="#!">Camping with Kids</a>
 		              	</li>
 			            <li>
-			            	<a href="#!">Campfire Recipes</a>
+			            	<a href="#!">Local Day Trips</a>
 			            </li>
 			            <li>
 			              	<a href="#!">Destinations</a>
 			            </li>
 			            <li>
-			              	<a href="#!">Hiking</a>
+			              	<a href="#!">Adventure Mom Life</a>
+			            </li>
+			            <li>
+			              	<a href="#!">Projects, Recipes, &amp; Products</a>
 			            </li>
 					</ul>
 		      	</div>
@@ -75,7 +80,7 @@
 		<nav id="mobile-nav" class="hide-on-large-only">
 			<div class="nav-wrapper">
 				<div class="brand left">
-					<a href="/">
+					<a href="<?= get_home_url(); ?>">
 						Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
 					</a>
 		      	</div>
@@ -83,7 +88,7 @@
 					<i class="mdi-navigation-menu"></i>
 				</a>
 				<ul class="side-nav" id="mobile-nav-links">
-					<li><a href="#">Home</a></li>
+					<li><a href="<?= get_home_url(); ?>">Home</a></li>
 					<li class="divider"></li>
 					<li class="no-padding">
 				      <ul class="collapsible collapsible-accordion">
@@ -91,18 +96,21 @@
 				          <a class="collapsible-header account-actions">Categories&nbsp;<i class="fa fa-caret-down"></i></a></a>
 				          <div class="collapsible-body">
 				            <ul>
-				              <li>
-				              	<a href="#!">Camping with Kids</a>
-				              </li>
-				              <li>
-				              	<a href="#!">Campfire Recipes</a>
-				              </li>
-				              <li>
-				              	<a href="#!">Destinations</a>
-				              </li>
-				              <li>
-				              	<a href="#!">Hiking</a>
-				              </li>
+				              	<li>
+					              	<a href="#!">Camping with Kids</a>
+				              	</li>
+					            <li>
+					            	<a href="#!">Local Day Trips</a>
+					            </li>
+					            <li>
+					              	<a href="#!">Destinations</a>
+					            </li>
+					            <li>
+					              	<a href="#!">Adventure Mom Life</a>
+					            </li>
+					            <li>
+					              	<a href="#!">Projects, Recipes, &amp; Products</a>
+					            </li>
 				            </ul>
 				          </div>
 				        </li>
@@ -168,10 +176,10 @@
 								</div>
 							</div>
 						</div>
-						<hr> <?php endwhile; else: ?>
-						<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+						<?php endwhile; else: ?>
+						<p><?php _e('Oops! We couldn\'t find the post you\'re looking for!'); ?></p>
 						<?php endif; ?><!-- The Loop -->
-
+						<hr class="hide-on-large-only">
 						<!--
 						<div class="post">
 							<h1 class="post-title center-align">Sample Post Title</h1>

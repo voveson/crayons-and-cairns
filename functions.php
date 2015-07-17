@@ -15,5 +15,5 @@ function get_post_more()
 
 function get_featured_img_url()
 {
-	return wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) );
+	return wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 }

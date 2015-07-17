@@ -34,17 +34,26 @@ $(function() {
 	img.onload = function() {
 		$('.main-content').css('margin-top', compute_main_top(img));
 	};
-
+	
 	img.src = $('body').css('background-image').replace(/url\(|\)$|"/ig, '');
+
+	// Listen for screen resize/rotate events
+	var resizeTimer;
+
+	$(window).on('resize', function(e) {
+		clearTimeout(resizeTimer);
+	 	resizeTimer = setTimeout(function() {
+	 		img.src = $('body').css('background-image').replace(/url\(|\)$|"/ig, '');
+	 		$('.main-content').css('margin-top', compute_main_top(img));
+		}, 250);
+	});
 
 	// Trigger focus styles for sidebar search
 	$('#sidebar-search').focus(function() {
 		var $this = $(this);
-		//$this.closest('div.input-field').addClass('z-depth-1');
 		$this.attr('placeholder', '');
 	}).focusout(function() {
 		var $this = $(this);
-		//$this.closest('div.input-field').removeClass('z-depth-1');
 		$this.attr('placeholder', 'search this site...');
 	});
 

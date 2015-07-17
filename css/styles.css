@@ -48,7 +48,7 @@
     width: 80% !important;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 993px) {
   html body {
     background: url("../images/desktop_header.JPG") no-repeat;
     background-size: 100% auto;
@@ -68,14 +68,28 @@
     padding-left: 67px !important;
   }
 }
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+  html body {
+    background: url("../images/desktop_header.JPG") no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  html body {
+    background: url("../images/mobile_header.JPG") no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+  }
+}
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: url("../images/mobile_header.JPG") no-repeat;
+  overflow-x: hidden;
+  background: url("../images/desktop_header.JPG") no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
-  overflow-x: hidden;
 }
 main {
   flex: 1 0 auto;
@@ -181,6 +195,10 @@ nav ul.dropdown-content li > a {
 .collapsible-header i {
   float: right !important;
 }
+.side-nav .collapsible-body li a {
+  margin: 0 !important;
+  font-size: 1rem !important;
+}
 .header-img-container img {
   width: 100%;
   height: auto;
@@ -270,6 +288,12 @@ footer {
   height: 200px;
 }
 .post-title {
+  color: #ef6c00;
+}
+.post-title a {
+  color: #ef6c00;
+}
+.post-title a:hover {
   color: #ef6c00;
 }
 .post-cover-img {

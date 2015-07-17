@@ -31,7 +31,7 @@
 		<nav class="hide-on-med-and-down">
 			<div class="nav-wrapper">
 				<div class="left brand">
-			      	<a href="">
+			      	<a href="<?= get_home_url(); ?>">
 			      		<img src="<?php bloginfo('template_url'); ?>/images/candc4.png">
 			      	</a>
 		      	</div>
@@ -44,7 +44,7 @@
 			    		</form>
 			    	</div>
 			      	<ul class="right" id="main-nav-links">
-			        	<li><a href="#">Home</a></li>
+			        	<li><a href="<?= get_home_url(); ?>">Home</a></li>
 			        	<li><a class="dropdown-button" data-activates="dropdown1" href="#">Categories&nbsp;<i class="fa fa-caret-down"></i></a></li>
 			        	<li><a href="<?= get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
 			        	<li><a href="#">Contact</a></li>
@@ -55,13 +55,16 @@
 			              	<a href="#!">Camping with Kids</a>
 		              	</li>
 			            <li>
-			            	<a href="#!">Campfire Recipes</a>
+			            	<a href="#!">Local Day Trips</a>
 			            </li>
 			            <li>
 			              	<a href="#!">Destinations</a>
 			            </li>
 			            <li>
-			              	<a href="#!">Hiking</a>
+			              	<a href="#!">Adventure Mom Life</a>
+			            </li>
+			            <li>
+			              	<a href="#!">Projects, Recipes, &amp; Products</a>
 			            </li>
 					</ul>
 		      	</div>
@@ -72,7 +75,7 @@
 		<nav id="mobile-nav" class="hide-on-large-only">
 			<div class="nav-wrapper">
 				<div class="brand left">
-					<a href="/">
+					<a href="<?= get_home_url(); ?>">
 						Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
 					</a>
 		      	</div>
@@ -80,7 +83,7 @@
 					<i class="mdi-navigation-menu"></i>
 				</a>
 				<ul class="side-nav" id="mobile-nav-links">
-					<li><a href="#">Home</a></li>
+					<li><a href="<?= get_home_url(); ?>">Home</a></li>
 					<li class="divider"></li>
 					<li class="no-padding">
 				      <ul class="collapsible collapsible-accordion">
@@ -88,18 +91,21 @@
 				          <a class="collapsible-header account-actions">Categories&nbsp;<i class="fa fa-caret-down"></i></a></a>
 				          <div class="collapsible-body">
 				            <ul>
-				              <li>
-				              	<a href="#!">Camping with Kids</a>
-				              </li>
-				              <li>
-				              	<a href="#!">Campfire Recipes</a>
-				              </li>
-				              <li>
-				              	<a href="#!">Destinations</a>
-				              </li>
-				              <li>
-				              	<a href="#!">Hiking</a>
-				              </li>
+				              	<li>
+					              	<a href="#!">Camping with Kids</a>
+				              	</li>
+					            <li>
+					            	<a href="#!">Local Day Trips</a>
+					            </li>
+					            <li>
+					              	<a href="#!">Destinations</a>
+					            </li>
+					            <li>
+					              	<a href="#!">Adventure Mom Life</a>
+					            </li>
+					            <li>
+					              	<a href="#!">Projects, Recipes, &amp; Products</a>
+					            </li>
 				            </ul>
 				          </div>
 				        </li>
@@ -124,7 +130,11 @@
 						<!-- The Loop -->
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<div class="post">
-							<h1 class="post-title center-align"><?php the_title(); ?></h1>
+							<h1 class="post-title center-align">
+								<a href="<?= the_permalink(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</h1>
 							<div class="post-cover-img">
 								<?php the_post_thumbnail(); ?>
 								<!--<img src="http://onmilwaukee.com//images/articles/ca/camping/camping_fullsize_story1.jpg" class=" ">-->
@@ -170,7 +180,7 @@
 							</div>
 						</div>
 						<hr> <?php endwhile; else: ?>
-						<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+						<p><?php _e('Oops! We couldn\'t find the post you\'re looking for!'); ?></p>
 						<?php endif; ?><!-- The Loop -->
 
 						<!--
