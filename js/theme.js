@@ -47,12 +47,20 @@ $(function() {
 	 		$('.main-content').css('margin-top', compute_main_top(img));
 		}, 250);
 	});
-
-	$('#insta-source').on('DOMNodeInserted', function(e) {
+/*
+	$('body').on('DOMNodeInserted', function(e) {
 		var el = $(e.target);
+		console.log('New Node:', el);
 
-		if (el.is('img'))
+		if (el.is('img.instagram-image'))
+		{
+			console.log("image added");
 			add_instagram_pic(el);
+		}
+	});
+*/
+	$('#insta-source').find('img').each(function() {
+		add_instagram_pic($(this));
 	});
 
 	// Trigger focus styles for sidebar search
