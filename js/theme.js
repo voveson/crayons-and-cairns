@@ -48,7 +48,12 @@ $(function() {
 		}, 250);
 	});
 
-	build_instagram_widget();
+	$('#insta-source').on('DOMNodeInserted', function(e) {
+		var el = $(e.target);
+		
+		if (el.is('img'))
+			add_instagram_pic(el);
+	}
 
 	// Trigger focus styles for sidebar search
 	$('#sidebar-search').focus(function() {
@@ -144,15 +149,12 @@ function compute_main_top(img)
 	return top + 'px';
 }
 
-function build_instagram_widget()
+function add_instagram_pic(pic)
 {
-	$('#insta-source').find('img').each(function() {
-		var pic = $(this);
-		var $image_tag = $('<img class="cc-insta-pic">');
-		var $image_block = $('<div class="col s6 m4"></div>');
-		$image_tag.attr('src', pic.attr('src'));
+	var $image_tag = $('<img class="cc-insta-pic">');
+	var $image_block = $('<div class="col s6 m4"></div>');
+	$image_tag.attr('src', pic.attr('src'));
 
-		$('#cc-instagram-widget').append($image_block);
-		$image_block.append($image_tag);
-	});
+	$('#cc-instagram-widget').append($image_block);
+	$image_block.append($image_tag);
 }
