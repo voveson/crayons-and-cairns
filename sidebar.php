@@ -32,5 +32,13 @@
 	<img src="http://moatsearch-data.s3.amazonaws.com/creatives/25b15570bf29cf30af6ad1cbb8b69f7bdf10a8bd.jpg" class="">
 
 	<hr>
+	<h3>Instagram</h3>
+	<div style="display:none" id="insta-source">
+		<?= do_shortcode('[fts instagram instagram_id=2097430197 type=user]'); ?>
+	</div>
+	<a href="http://instagram.com/_u/crayonsandcairns/" target="_blank">
+		<div class="row" id="cc-instagram-widget">
+		</div>
+	</a>
 
 </div>

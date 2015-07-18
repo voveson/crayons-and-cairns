@@ -48,6 +48,8 @@ $(function() {
 		}, 250);
 	});
 
+	build_instagram_widget();
+
 	// Trigger focus styles for sidebar search
 	$('#sidebar-search').focus(function() {
 		var $this = $(this);
@@ -140,4 +142,17 @@ function compute_main_top(img)
 	top = Math.min(0.7 * h, img_h);
 	
 	return top + 'px';
+}
+
+function build_instagram_widget()
+{
+	$('#insta-source').find('img').each(function() {
+		var pic = $(this);
+		var $image_tag = $('<img class="cc-insta-pic">');
+		var $image_block = $('<div class="col s6 m4"></div>');
+		$image_tag.attr('src', pic.attr('src'));
+
+		$('#cc-instagram-widget').append($image_block);
+		$image_block.append($image_tag);
+	});
 }

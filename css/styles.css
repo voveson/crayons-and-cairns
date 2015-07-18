@@ -82,6 +82,13 @@
     background-attachment: fixed;
   }
 }
+.cc-insta-pic {
+  max-width: 150px;
+}
+#cc-instagram-widget .col {
+  text-align: center;
+  padding: 2px !important;
+}
 body {
   display: flex;
   min-height: 100vh;
