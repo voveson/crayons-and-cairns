@@ -1,4 +1,5 @@
 <div id="sidebar">
+	<?php if(!is_page('about')): ?>
 	<h3>About Us</h3>
 	<img src="<?php bloginfo('template_url'); ?>/images/about.jpg" class="">
 	<p>
@@ -6,6 +7,7 @@
 	</p>
 	
 	<hr>
+	<?php endif; ?>
 	<form>
 	    <div class="input-field" id="sidebar-search-container">
 	      	<input id="sidebar-search" type="search" required placeholder="search this site...">

@@ -43,22 +43,14 @@ $(function() {
 	$(window).on('resize', function(e) {
 		clearTimeout(resizeTimer);
 	 	resizeTimer = setTimeout(function() {
-	 		img.src = $('body').css('background-image').replace(/url\(|\)$|"/ig, '');
-	 		$('.main-content').css('margin-top', compute_main_top(img));
+	 		if (!$('input:focus').length && !$('textarea:focus').length)
+	 		{
+		 		img.src = $('body').css('background-image').replace(/url\(|\)$|"/ig, '');
+		 		$('.main-content').css('margin-top', compute_main_top(img));
+		 	}
 		}, 250);
 	});
-/*
-	$('body').on('DOMNodeInserted', function(e) {
-		var el = $(e.target);
-		console.log('New Node:', el);
 
-		if (el.is('img.instagram-image'))
-		{
-			console.log("image added");
-			add_instagram_pic(el);
-		}
-	});
-*/
 	$('#insta-source').find('img').each(function() {
 		add_instagram_pic($(this));
 	});
@@ -136,6 +128,26 @@ $(function() {
 		$(this).animate({opacity: 0.70},{duration: 300});
 	}).mouseout(function(){
 		$(this).animate({opacity: 1},{duration: 300});
+	});
+
+	// Listen for submit events on the contact form
+	$('#cc-contact-form').submit(function(e) {
+		e.preventDefault();
+
+		var source_form = $('.contact-form-source').find('form');
+		var name_field = $('#fscf_name1');
+		var email_field = $('#fscf_email1');
+		var subj_field = $('#fscf_field1_2');
+		var msg_field = $('#fscf_field1_3');
+
+		var form_data = $(this).serializeArray();
+
+		name_field.val(form_data[0].value);
+		email_field.val(form_data[1].value);
+		subj_field.val(form_data[2].value);
+		msg_field.val(form_data[3].value);
+
+		source_form.submit();
 	});
 });
 
