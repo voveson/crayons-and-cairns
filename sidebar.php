@@ -19,14 +19,17 @@
 	<hr>
 	<h3>Follow Us</h3>
 	<div class="row">
-		<div class="col s4 right-align social-icon">
+		<div class="col s3 right-align social-icon">
 			<a href="#"><i class="fa fa-facebook"></i></a>
 		</div>
-		<div class="col s4 center-align social-icon">
+		<div class="col s3 center-align social-icon">
 			<a href="https://twitter.com/crayonsncairns" target="_blank"><i class="fa fa-twitter"></i></a>
 		</div>
-		<div class="col s4 left-align social-icon">
+		<div class="col s3 left-align social-icon">
 			<a href="http://instagram.com/_u/crayonsandcairns/" target="_blank"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="col s3 left-align social-icon">
+			<a href="https://www.pinterest.com/CCadventuremoms/" target="_blank"><i class="fa fa-pinterest"></i></a>
 		</div>
 	</div>
 

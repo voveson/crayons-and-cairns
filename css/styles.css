@@ -344,8 +344,8 @@ footer .copyright {
   height: auto;
 }
 .post-cover-img.about {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
 }
 .cc-post-content p,
 .cc-post-content div.post-more {
