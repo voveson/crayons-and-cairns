@@ -30,10 +30,24 @@
 							</div>
 						</div>
 						<?php endwhile; else: ?>
-						<p><?php _e('Oops! We couldn\'t find the post you\'re looking for!'); ?></p>
+						<p><?php _e("Oops! We couldn't find the post you're looking for!"); ?></p>
 						<?php endif; ?><!-- The Loop -->
 						<div class="cairn-definition">
-							<img src="<?php bloginfo('template_url'); ?>/images/cairn-def.png">
+							<table class="hide-on-small-only">
+								<tr>
+									<td class="left-cell">Cairn&nbsp;[kern]&nbsp;noun:</td>
+									<td class="right-cell">a small pile of stones, used to guide or mark a trail.</td>
+								</tr>
+							</table>
+
+							<table class="hide-on-med-and-up">
+								<tr>
+									<td class="top-cell">Cairn&nbsp;[kern]&nbsp;noun:</td>
+								</tr>
+								<tr>
+									<td class="bottom-cell">a small pile of stones, used to guide or mark a trail.</td>
+								</tr>
+							</table>
 						</div>
 						<hr class="hide-on-large-only">						
 					</div>

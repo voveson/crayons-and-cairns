@@ -49,7 +49,7 @@
           										<label for="cc_message">Message</label>
 									        </div>
 									        <div class="input-field right">
-									        	<button class="waves-effect waves-light btn">
+									        	<button id="submit-contact-btn" class="waves-effect waves-light btn">
 									        		<i class="fa fa-paper-plane right"></i>Submit
 									        	</button>
 									        </div>

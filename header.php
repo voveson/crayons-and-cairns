@@ -1,8 +1,9 @@
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/materialize.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/animate.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<script type="text/javascript">
@@ -85,7 +86,7 @@
 					<li class="no-padding">
 				      <ul class="collapsible collapsible-accordion">
 				        <li>
-				          <a class="collapsible-header account-actions">Categories&nbsp;<i class="fa fa-caret-down"></i></a></a>
+				          <a id="cat-link" class="collapsible-header account-actions">Categories&nbsp;<i class="fa fa-caret-down"></i></a></a>
 				          <div class="collapsible-body">
 				            <ul>
 				              	<li>

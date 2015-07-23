@@ -30,9 +30,19 @@
 										<div class="cc-post-meta">
 											Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?>
 										</div>
-										<div class="cc-sharing">
-											Share this post:
-											<?php echo do_shortcode("[TheChamp-Sharing]"); ?>
+										<div class="cc-charing-and-comments row">
+											<div class="cc-sharing col s12 m6">
+												Share this post:
+												<?php echo do_shortcode("[TheChamp-Sharing]"); ?>
+											</div>
+											<div class="cc-comment-count col s12 m6">
+												<a href="<?= the_permalink(); ?>/#disqus_thread">
+													<i class="fa fa-comments"></i>&nbsp;
+												</a>
+												<a href="<?= the_permalink(); ?>/#disqus_thread">
+													<?= comments_number('Be the first to comment', '1 Comment', '% Comments') ?>
+												</a>
+											</div>
 										</div>
 										<div class="recd-posts">
 											<strong>You might also like:</strong><br>

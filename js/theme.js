@@ -172,7 +172,7 @@ function compute_main_top(img)
 function add_instagram_pic(pic)
 {
 	var $image_tag = $('<img class="cc-insta-pic">');
-	var $image_block = $('<div class="col s6 m4"></div>');
+	var $image_block = $('<div class="col s4 m3 l4"></div>');
 	$image_tag.attr('src', pic.attr('src'));
 
 	$('#cc-instagram-widget').append($image_block);

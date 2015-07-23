@@ -61,11 +61,8 @@
     height: 110px !important;
     line-height: 110px !important;
   }
-  html nav .brand,
-  html nav .nav-wrapper i .brand,
-  html nav a.button-collapse .brand,
-  html nav a.button-collapse i .brand {
-    padding-left: 67px !important;
+  html .cc-comment-count {
+    text-align: right;
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 601px) {
@@ -73,6 +70,9 @@
     background: url("../images/desktop_header.JPG") no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
+  }
+  html .cc-comment-count {
+    text-align: right;
   }
 }
 @media only screen and (max-width: 600px) and (orientation: portrait) {
@@ -120,6 +120,13 @@ nav {
   color: #ef6c00;
   box-shadow: none !important;
 }
+nav.hide-on-med-and-down .nav-wrapper {
+  width: 80%;
+  min-width: 865px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
 nav .brand a {
   font-family: 'Aracne Stamp';
   color: #009688 !important;
@@ -134,9 +141,6 @@ nav .brand img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-nav .right {
-  padding-right: 41px;
-}
 nav a {
   text-transform: uppercase;
   font-weight: bold;
@@ -145,16 +149,12 @@ nav a {
   padding-left: 25px !important;
   padding-right: 25px !important;
   color: #4d4d4d !important;
-  /*
-		&:hover {
-			color: @darkOrange !important;
-		}
-*/
 }
 nav a i.fa {
   font-size: 1rem !important;
   display: inline-block;
   color: #009688;
+  line-height: inherit !important;
 }
 nav #nav-search-link a {
   color: #ef6c00 !important;
@@ -166,7 +166,6 @@ nav #nav-search {
   display: none;
   width: 450px;
   height: 66px;
-  margin-right: 41px;
   overflow: hidden;
 }
 nav .input-field input[type=search] + label i {
@@ -201,6 +200,9 @@ nav ul.dropdown-content li > a {
 }
 .collapsible-header i {
   float: right !important;
+}
+.collapsible-header i #cat-link .fa {
+  line-height: inherit !important;
 }
 .side-nav .collapsible-body li a {
   margin: 0 !important;
@@ -408,6 +410,10 @@ footer .copyright {
   font-size: 1.1rem;
   font-weight: bold;
 }
+.cc-post-content .cc-post-more .cc-post-footer .cc-comment-count {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
 .cc-post-content .cc-post-more .cc-post-footer .recd-posts {
   color: #009688;
   margin-top: 20px;
@@ -420,13 +426,41 @@ footer .copyright {
   height: auto;
   cursor: pointer;
 }
+#submit-contact-btn i.fa {
+  line-height: inherit !important;
+}
 .cairn-definition {
   width: 90%;
   margin: 20px auto;
   text-align: center;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.7rem;
 }
-.cairn-definition img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+.cairn-definition table {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.cairn-definition table td {
+  vertical-align: top;
+  line-height: 1 !important;
+}
+.cairn-definition table.hide-on-med-and-up tr {
+  padding: 5px !important;
+}
+.cairn-definition table.hide-on-med-and-up td.top-cell {
+  font-weight: 700;
+  padding: 5px !important;
+}
+.cairn-definition table.hide-on-med-and-up td.bottom-cell {
+  font-weight: normal;
+  padding: 5px 5px 5px 15px !important;
+}
+.cairn-definition table.hide-on-small-only td {
+  font-weight: 700;
+}
+.cairn-definition table.hide-on-small-only td.left-cell {
+  text-align: right;
+}
+.cairn-definition table.hide-on-small-only td.right-cell {
+  text-align: left;
 }
