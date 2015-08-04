@@ -24,7 +24,7 @@
 					</div>
 					<div class="col s6 m4 center-align">
 						<h5>Let's Socialize!</h5>
-						<a target="_blank" href="">
+						<a target="_blank" href="https://www.facebook.com/crayonsandcairns">
 							<i class="fa fa-facebook social-icon"></i>
 						</a>
 						<a target="_blank" href="https://twitter.com/crayonsncairns">

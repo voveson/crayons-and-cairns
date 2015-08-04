@@ -171,7 +171,7 @@
 			<div class="social-links">
 				<table>
 					<tr>
-						<td><a id="fb-link" href=""><i class="fa fa-facebook"></i></a></td>
+						<td><a href="https://www.facebook.com/crayonsandcairns" target="_blank"><i class="fa fa-facebook"></i></a></td>
 						<td><a href="https://twitter.com/crayonsncairns" target="_blank"><i class="fa fa-twitter"></i></a></td>
 						<td><a href="http://instagram.com/_u/crayonsandcairns/" target="_blank"><i class="fa fa-instagram"></i></a></td>
 						<td><a href="https://www.pinterest.com/CCadventuremoms/" target="_blank"><i class="fa fa-pinterest"></i></a></td>
@@ -259,11 +259,6 @@
 					$('#subscribing').hide();
 					$('#subscribed').show();
 				}, 3000);
-			});
-
-			$('#fb-link').click(function(e) {
-				e.preventDefault();
-				alert('Oops!  Our Facebook page isn\'t quite ready yet!  Check back later!');
 			});
 		});
 	</script>
