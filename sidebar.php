@@ -8,13 +8,28 @@
 	
 	<hr>
 	<?php endif; ?>
-	<form>
+	<form id="sidebar-search-form">
 	    <div class="input-field" id="sidebar-search-container">
 	      	<input id="sidebar-search" type="search" required placeholder="search this site...">
 	      	<label for="sidebar-search"><i class="mdi-action-search"></i></label>
 	      	<i class="mdi-navigation-close"></i>
 	    </div>
 	</form>
+
+	<hr>
+	<h3>Subscribe</h3>
+	<div class="row subscribe-widget">
+		<div class="col s6">
+			<button class="waves-effect waves-light btn">
+				<i class="fa fa-envelope material-icons"></i>&nbsp;EMAIL
+			</button>
+		</div>
+		<div class="col s6">
+			<button class="waves-effect waves-light btn">
+				<i class="fa fa-rss material-icons"></i>&nbsp;RSS
+			</button>
+		</div>
+	</div>
 
 	<hr>
 	<h3>Follow Us</h3>
@@ -34,6 +49,7 @@
 	</div>
 
 	<hr>
+	<!-- Google Ads Widget will go right here -->
 	<img src="http://moatsearch-data.s3.amazonaws.com/creatives/25b15570bf29cf30af6ad1cbb8b69f7bdf10a8bd.jpg" class="">
 
 	<hr>
@@ -46,4 +62,9 @@
 		</div>
 	</a>
 
+	<hr>
+	<h3>Top Posts</h3>
+	<div class="sidebar-top-posts">
+		<?= do_shortcode('[wpp post_type=post limit=3 stats_comments=1 thumbnail_width=300 post_html=<li>{thumb}{title}<br><span>{views}&nbsp;views&ensp;&boxv;&ensp;{comments}&nbsp;comments</span></li><hr>]'); ?>
+	</div>
 </div>

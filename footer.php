@@ -41,7 +41,7 @@
 			</div>
 			<div class="row copyright">
 				<div class="col s12" style="text-align: center;">
-					&copy; 2015 Crayons &amp; Cairns.  All rights reserved.
+					&copy; <?= date_format(new DateTime(), "Y"); ?> Crayons &amp; Cairns.  All rights reserved.
 				</div>
 			</div>
 		</footer>

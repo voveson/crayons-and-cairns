@@ -2,6 +2,7 @@
 <head>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<title><?php the_title(); ?> | Crayons &amp; Cairns</title>
+		<meta property="og:image" content="<?= get_featured_img_url() ?>" />
 	<?php endwhile; ?>
 	<?php get_header(); ?>
 	<main>
@@ -15,7 +16,6 @@
 							<h1 class="post-title center-align"><?php the_title(); ?></h1>
 							<div class="post-cover-img">
 								<?php the_post_thumbnail(); ?>
-								<!--<img src="http://onmilwaukee.com//images/articles/ca/camping/camping_fullsize_story1.jpg" class=" ">-->
 							</div>
 							<div class="cc-post-content">
 								<div class="cc-post-more single">
@@ -32,25 +32,7 @@
 											<?php comments_template(); ?>
 										</div>
 										<div class="recd-posts">
-											<strong>You might also like:</strong><br>
-											<div class="row">
-												<div class="col s6 m4 l3">
-													<img class="recd-post-img" src="https://bibledaily.files.wordpress.com/2009/09/off-road.jpg">
-													Curabitur Consectetur velit Sed
-												</div>
-												<div class="col s6 m4 l3">
-													<img class="recd-post-img" src="http://www.flyfishnewengland.com/lake-boat.jpg">
-													Amet Fermentum Condimentum
-												</div>
-												<div class="col s6 m4 l3">
-													<img class="recd-post-img" src="http://alterra.cc/media/turobj/icon/Grand_Canyon___Canyons_of_Utah_attr_37.jpg">
-													Augue Diam Euismod
-												</div>
-												<div class="col s6 m4 l3">
-													<img class="recd-post-img" src="http://blog.emsoutdoors.com/wp-content/uploads/2013/03/Camelbacks.jpg">
-													Tempor Purus Pharetra
-												</div>
-											</div>
+											<?php related_posts(); ?>
 										</div>
 									</div>
 								</div>

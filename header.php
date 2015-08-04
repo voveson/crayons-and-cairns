@@ -35,9 +35,9 @@
 		      	</div>
 		      	<div class="right">
 		      		<div id="nav-search" class="right input-field">
-			    		<form>
-			          		<input id="search" type="search" required placeholder="search this site...">
-			          		<label for="search"><i class="mdi-action-search"></i></label>
+			    		<form role="search" method="get" id="searchform" class="searchform" action="<?= get_home_url(); ?>/">
+			          		<input id="s" name="s" type="search" required placeholder="search this site...">
+			          		<label for="s"><i class="mdi-action-search"></i></label>
 			          		<i id="nav-search-close" class="mdi-navigation-close"></i>
 			    		</form>
 			    	</div>
@@ -120,3 +120,19 @@
 	    	<h1 class="white-text">Crayons &amp; Cairns</h1>
 	    </div>-->
 	</header>
+	<div id="welcome-modal" class="modal">
+	    <div class="modal-content">
+	    	<div class="center-align">
+		    	<img src="<?php bloginfo('template_url'); ?>/images/teal-cairn.png">
+		    	<h4>Welcome to Crayons &amp; Cairns!</h4>
+		    </div>
+	    	<p>
+	      		Thanks for joining us for our site launch! To celebrate our launch, 
+	      		we're doing an awesome giveaway! Be sure to click <a href="">here</a> 
+	      		for all the details.
+	    	</p>
+	    </div>
+	    <div class="modal-footer">
+	    	<button class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!</button>
+	    </div>
+  	</div>

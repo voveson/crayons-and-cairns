@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: About
- *
+ * Author: Vince Oveson
  */
 ?>
 <!DOCTYPE html>

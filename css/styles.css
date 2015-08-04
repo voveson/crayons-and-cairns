@@ -45,7 +45,7 @@
 }
 @media only screen and (min-width: 993px) {
   .container {
-    width: 80% !important;
+    width: 75% !important;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -80,6 +80,11 @@
     background: url("../images/mobile_header.JPG") no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 350px) {
+  html nav .brand a {
+    font-size: 2.4rem !important;
   }
 }
 .cc-insta-pic {
@@ -272,6 +277,32 @@ a:hover {
 #sidebar .input-field input[type=search]:focus ~ .mdi-navigation-close {
   color: #ef6c00;
 }
+#sidebar .subscribe-widget .btn {
+  padding: 0 !important;
+  text-align: center;
+  width: 100%;
+}
+#sidebar .subscribe-widget .btn i {
+  line-height: 36px;
+}
+#sidebar .sidebar-top-posts li {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#sidebar .sidebar-top-posts li span {
+  font-size: 0.85rem;
+  color: #5e5e5e;
+}
+#sidebar .sidebar-top-posts hr {
+  width: 95% !important;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+#sidebar .sidebar-top-posts hr:last-child {
+  display: none;
+}
 #back-to-top-container {
   color: #009688;
   position: fixed;
@@ -414,14 +445,16 @@ footer .copyright {
   margin-top: 20px;
   font-size: 1.5rem;
 }
-.cc-post-content .cc-post-more .cc-post-footer .recd-posts {
+.cc-post-content .cc-post-more .cc-post-footer .recd-posts .yarpp-related {
   color: #009688;
   margin-top: 20px;
 }
-.cc-post-content .cc-post-more .cc-post-footer .recd-posts div {
+.cc-post-content .cc-post-more .cc-post-footer .recd-posts .yarpp-related a div {
   text-align: center;
+  font-size: 1.05rem;
+  font-weight: normal;
 }
-.cc-post-content .cc-post-more .cc-post-footer .recd-posts img {
+.cc-post-content .cc-post-more .cc-post-footer .recd-posts .yarpp-related a img {
   width: 100%;
   height: auto;
   cursor: pointer;
@@ -463,4 +496,38 @@ footer .copyright {
 }
 .cairn-definition table.hide-on-small-only td.right-cell {
   text-align: left;
+}
+#search-results h3 {
+  margin-bottom: 40px;
+  color: #ef6c00;
+}
+#search-results h3 span {
+  color: #5e5e5e;
+}
+#search-results img {
+  width: 100%;
+  height: auto;
+}
+#search-results .search-result-excerpt {
+  color: #5e5e5e;
+}
+#search-results .search-result-excerpt strong {
+  color: #009688;
+}
+#search-results .search-result-excerpt .search-result-meta {
+  color: #757575;
+  font-size: 0.85rem;
+}
+#welcome-modal h4 {
+  color: #ef6c00 !important;
+}
+#welcome-modal img {
+  width: 50px;
+  height: auto;
+}
+#welcome-modal .modal-footer {
+  border-top: solid 1px lightgray;
+}
+#welcome-modal p {
+  font-size: 1.2rem;
 }

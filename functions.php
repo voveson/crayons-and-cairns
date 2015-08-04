@@ -17,3 +17,12 @@ function get_featured_img_url()
 {
 	return wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 }
+
+function coming_soon()
+{
+	return false;
+	$now = new DateTime('now', new DateTimeZone('America/Denver'));
+	$launch = new DateTime('2015-08-11 08:00A.M.', new DateTimeZone('America/Denver'));
+
+	return $now < $launch;
+}

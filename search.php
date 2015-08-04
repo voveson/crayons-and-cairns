@@ -150,13 +150,13 @@
 					SECONDS
 				</div>
 				<div class="timer-exp-date">
-					Tuesday August 11, 2015 @ 8&thinsp;:&thinsp;00 AM (MDT)
+					Saturday August 1, 2015 @ 10&thinsp;:&thinsp;00 AM (MDT)
 				</div>
 			</div>
 			<h2>
-				We've got an exciting giveaway planned for our launch, so follow us on social media for news and updates!
+				In the mean time, join our email list and follow us on social media for news and updates!
 			</h2>
-			<div style="display:none" class="cc-email-subscribe">
+			<div class="cc-email-subscribe">
 				<form id="subscribe-form">
 					<input id="email-input" type="email" placeholder="Email">
 					<button type="submit">Subscribe</button>
@@ -171,10 +171,10 @@
 			<div class="social-links">
 				<table>
 					<tr>
-						<td><a id="fb-link" href=""><i class="fa fa-facebook"></i></a></td>
-						<td><a href="https://twitter.com/crayonsncairns" target="_blank"><i class="fa fa-twitter"></i></a></td>
-						<td><a href="http://instagram.com/_u/crayonsandcairns/" target="_blank"><i class="fa fa-instagram"></i></a></td>
-						<td><a href="https://www.pinterest.com/CCadventuremoms/" target="_blank"><i class="fa fa-pinterest"></i></a></td>
+						<td><a href=""><i class="fa fa-facebook"></i></a></td>
+						<td><a href=""><i class="fa fa-twitter"></i></a></td>
+						<td><a href=""><i class="fa fa-instagram"></i></a></td>
+						<td><a href=""><i class="fa fa-pinterest"></i></a></td>
 					</tr>
 				</table>
 			</div>
@@ -260,69 +260,57 @@
 					$('#subscribed').show();
 				}, 3000);
 			});
-
-			$('#fb-link').click(function(e) {
-				e.preventDefault();
-				alert('Oops!  Our Facebook page isn\'t quite ready yet!  Check back later!');
-			});
 		});
 	</script>
 </body>
 </html>	
 <?php else: ?>
 <head>
-	<title>Crayons &amp; Cairns</title>
+	<title>Crayons &amp; Cairns | Search Results</title>
 	<?php get_header(); ?>
 	<main>
 		<div class="main-content">
 			<div class="container">
 				<div class="row">
-					<div class="col s12 m12 l9">
-						<!-- The Loop -->
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<div class="post">
-							<h1 class="post-title center-align">
-								<a href="<?= the_permalink(); ?>">
-									<?php the_title(); ?>
-								</a>
-							</h1>
-							<div class="post-cover-img">
-								<?php the_post_thumbnail(); ?>
-							</div>
-							<div class="cc-post-content">
-								<div class="cc-post-excerpt">
-									<?php the_excerpt() ?>
-									<a class="read-more-link" href="#">read more&nbsp;<i class="fa fa-angle-double-down"></i></a>
-								</div>
-								<div class="cc-post-more">
-									<?php the_content() ?>
-									<div class="cc-post-footer">
-										<div class="cc-post-meta">
-											Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?>
+					<div class="col s12 m12 l9" id="search-results">
+						<h3>
+							<?php printf( __( 'Search Results for: %s' ), '<span>"' . get_search_query() . '"</span>'); ?>
+						</h3>
+						<?php if ( have_posts() ) : ?>
+
+							<?php
+							// Start the loop.
+							while ( have_posts() ) : the_post(); ?>
+
+								<a href="<?php the_permalink(); ?>">
+									<div class="row">
+										<div class="col s3 m2">
+											<?php the_post_thumbnail(); ?>
 										</div>
-										<div class="cc-charing-and-comments row">
-											<div class="cc-sharing col s12 m6">
-												Share this post:
-												<?php echo do_shortcode("[TheChamp-Sharing]"); ?>
+										<div class="col s9 m10 search-result-excerpt">
+											<strong><?php the_title(); ?></strong><br>
+											<?php the_excerpt(); ?>
+											<div class="search-result-meta">
+												Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?>
 											</div>
-											<div class="cc-comment-count col s12 m6">
-												<a href="<?= the_permalink(); ?>/#disqus_thread">
-													<i class="fa fa-comments"></i>&nbsp;
-												</a>
-												<a href="<?= the_permalink(); ?>/#disqus_thread">
-													<?= comments_number('Be the first to comment', '1 Comment', '% Comments') ?>
-												</a>
-											</div>
-										</div>
-										<div class="recd-posts">
-											<?php related_posts(); ?>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<hr> <?php endwhile; else: ?>
-						<p><?php _e('Oops! We couldn\'t find the post you\'re looking for!'); ?></p>
+								</a>
+								<hr>
+
+							<?php endwhile; // End the loop.
+
+							// Previous/next page navigation.
+							the_posts_pagination( array(
+								'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+								'next_text'          => __( 'Next page', 'twentyfifteen' ),
+								'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+							) );
+
+						// If no content, include the "No posts found" template.
+						else : ?>
+							No matches found.
+
 						<?php endif; ?>
 					</div>
 					<div class="col s12 m12 l3">
