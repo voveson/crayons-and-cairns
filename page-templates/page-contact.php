@@ -17,7 +17,7 @@
 					<div class="col s12 m12 l9">
 						<!-- The Loop -->
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<div class="post">
+						<div id="thank-you" class="post">
 							<h1 class="post-title center-align"><?php the_title(); ?></h1>
 							<div class="post-cover-img">
 								<?php the_post_thumbnail(); ?>
@@ -26,6 +26,9 @@
 								<div class="cc-post-more single">
 									<div class="contact-page-content">
 										<?php the_content() ?>
+									</div>
+									<div id="cc-contact-thanks">
+										Thank you for your message!  We will get back to you as soon as we can.
 									</div>
 									<div class="contact-form-source">
 										<?= do_shortcode('[si-contact-form form="1"]'); ?>
@@ -37,7 +40,7 @@
 									        	<label for="cc_name">Name</label>
 									        </div>
 									        <div class="input-field">
-									        	<input type="email" id="cc_email" name="cc_email"/>
+									        	<input validate type="email" id="cc_email" name="cc_email"/>
 									        	<label for="cc_email">Email Address</label>
 									        </div>
 									        <div class="input-field">

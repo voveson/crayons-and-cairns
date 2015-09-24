@@ -36,6 +36,9 @@
 						<a target="_blank" href="https://www.pinterest.com/CCadventuremoms/">
 							<i class="fa fa-pinterest social-icon"></i>
 						</a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCnTIg_Aw7GP7HiiVEsyg5EA">
+							<i class="fa fa-youtube social-icon"></i>
+						</a>
 					</div>
 				</div>
 			</div>

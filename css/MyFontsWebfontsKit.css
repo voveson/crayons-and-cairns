@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3077003, 2015-08-17T17:06:31-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AracneStampReg by Antipixel
+ * URL: http://www.myfonts.com/fonts/antipixel/aracne/stamp-regular/
+ * Copyright: Copyright (c) 2014 by Julia Martinez Diana, Antipixel. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3077003
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2ef38b");
+
+  
+@font-face {font-family: 'AracneStampReg';src: url('../font/webfonts/2EF38B_0_0.eot');src: url('../font/webfonts/2EF38B_0_0.eot?#iefix') format('embedded-opentype'),url('../font/webfonts/2EF38B_0_0.woff2') format('woff2'),url('../font/webfonts/2EF38B_0_0.woff') format('woff'),url('../font/webfonts/2EF38B_0_0.ttf') format('truetype');}
+ 

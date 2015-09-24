@@ -20,8 +20,7 @@
 						<div class="post">
 							<h1 class="post-title center-align"><?php the_title(); ?></h1>
 							<div class="post-cover-img about">
-								
-								<?php wd_slider(2); ?>
+								<?php the_post_thumbnail(); ?>
 							</div>
 							<div class="cc-post-content">
 								<div class="cc-post-more single">

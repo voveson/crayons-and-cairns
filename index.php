@@ -5,7 +5,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Crayons &amp; Cairns</title>
 	<link rel="icon" type="image/png" href="http://52.24.122.177/candc-beta/wp-content/themes/candc-theme/crayons-and-cairns/images/favicon.png">
+	<!--
+		/**
+		 * @license
+		 * MyFonts Webfont Build ID 3077003, 2015-08-17T17:06:31-0400
+		 * 
+		 * The fonts listed in this notice are subject to the End User License
+		 * Agreement(s) entered into by the website owner. All other parties are 
+		 * explicitly restricted from using the Licensed Webfonts(s).
+		 * 
+		 * You may obtain a valid license at the URLs below.
+		 * 
+		 * Webfont: AracneStampReg by Antipixel
+		 * URL: http://www.myfonts.com/fonts/antipixel/aracne/stamp-regular/
+		 * Copyright: Copyright (c) 2014 by Julia Martinez Diana, Antipixel. All rights
+		 * reserved.
+		 * Licensed pageviews: 20,000
+		 * 
+		 * 
+		 * License: http://www.myfonts.com/viewlicense?type=web&buildid=3077003
+		 * 
+		 * © 2015 MyFonts Inc
+		*/
+	-->
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/MyFontsWebfontsKit.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-66461601-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
 	<style>
 		@media only screen and (max-width: 600px) {
 			html {
@@ -32,7 +66,7 @@
 			}
 		}
 		h1, h2, h3, h4 {
-			font-family: 'Aracne Stamp';
+			font-family: 'AracneStampReg';
 			color: #009688;
 		}
 		h1 {
@@ -76,7 +110,7 @@
 			text-align: center;
 			display: inline-block;
 			font-size: 1.2rem;
-			font-family: 'Aracne Stamp';
+			font-family: 'AracneStampReg';
 			font-weight: bold;
 			color: #009688;
 		}
@@ -86,7 +120,7 @@
 		}
 		.timer-exp-date {
 			text-align: center;
-			font-family: 'Aracne Stamp';
+			font-family: 'AracneStampReg';
 			font-weight: bold;
 			font-size: 1.15rem;
 			color: #ef6c00;
@@ -115,7 +149,7 @@
 			cursor: pointer;
 		}
 		#subscribing, #subscribed {
-			font-family: 'Aracne Stamp';
+			font-family: 'AracneStampReg';
 			display: none;
 			text-align: center;
 			width: 100%;
@@ -150,24 +184,12 @@
 					SECONDS
 				</div>
 				<div class="timer-exp-date">
-					Tuesday August 11, 2015 @ 8&thinsp;:&thinsp;00 AM (MDT)
+					Tuesday August 18, 2015 @ 8&thinsp;:&thinsp;00 AM (MDT)
 				</div>
 			</div>
 			<h2>
 				We've got an exciting giveaway planned for our launch, so follow us on social media for news and updates!
 			</h2>
-			<div style="display:none" class="cc-email-subscribe">
-				<form id="subscribe-form">
-					<input id="email-input" type="email" placeholder="Email">
-					<button type="submit">Subscribe</button>
-				</form>
-				<div id="subscribing">
-					<i class="fa fa-spinner fa-spin"></i>&nbsp;Subscribing...
-				</div>
-				<div id="subscribed">
-					Subscribed!&nbsp;<i class="fa fa-check"></i>
-				</div>
-			</div>
 			<div class="social-links">
 				<table>
 					<tr>
@@ -181,22 +203,10 @@
 		</div>
 	</main>
 	<script src="<?php bloginfo('template_url'); ?>/js/library.js"></script>
-	<script type="text/javascript">
-	    (function() {
-	        var path = '//easy.myfonts.net/v2/js?sid=229610(font-family=Aracne)&sid=229612(font-family=Aracne+Light)&sid=264533(font-family=Aracne+Stamp)&key=JIldsgJFxr',
-	            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-	            trial = document.createElement('script');
-	        trial.type = 'text/javascript';
-	        trial.async = true;
-	        trial.src = protocol + path;
-	        var head = document.getElementsByTagName("head")[0];
-	        head.appendChild(trial);
-	    })();
-	</script>
 	<script>
 		$(function() {
 			var current_time = new Date(<?= time() * 1000 ?>);
-			var exp_time = new Date(2015, 7, 11, 8, 0, 0, 0);
+			var exp_time = new Date(2015, 7, 18, 8, 0, 0, 0);
 			var diff_ms = exp_time - current_time;
 			var diff_days = Math.floor(diff_ms / 86400000);
 			var leftover = diff_ms % 86400000;
@@ -249,17 +259,6 @@
 					location.reload();
 				}
 			}
-
-			$('#subscribe-form').submit(function(e) {
-				e.preventDefault();
-				$(this).hide();
-				$('#subscribing').show();
-
-				setTimeout(function(){
-					$('#subscribing').hide();
-					$('#subscribed').show();
-				}, 3000);
-			});
 		});
 	</script>
 </body>
@@ -305,7 +304,7 @@
 													<i class="fa fa-comments"></i>&nbsp;
 												</a>
 												<a href="<?= the_permalink(); ?>/#disqus_thread">
-													<?= comments_number('Be the first to comment', '1 Comment', '% Comments') ?>
+													<?php comments_number('Be the first to comment', '1 Comment', '% Comments') ?>
 												</a>
 											</div>
 										</div>

@@ -18,11 +18,18 @@ function get_featured_img_url()
 	return wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 }
 
+function cc_get_cat_link($slug)
+{
+	$cat = get_category_by_slug( $slug );
+
+	return get_category_link($cat->term_id);
+}
+
 function coming_soon()
 {
-	return false;
+	//return false;
 	$now = new DateTime('now', new DateTimeZone('America/Denver'));
-	$launch = new DateTime('2015-08-11 08:00A.M.', new DateTimeZone('America/Denver'));
+	$launch = new DateTime('2015-08-18 08:00A.M.', new DateTimeZone('America/Denver'));
 
 	return $now < $launch;
 }

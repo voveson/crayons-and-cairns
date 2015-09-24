@@ -1,22 +1,44 @@
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+	<!--
+		/**
+		 * @license
+		 * MyFonts Webfont Build ID 3077003, 2015-08-17T17:06:31-0400
+		 * 
+		 * The fonts listed in this notice are subject to the End User License
+		 * Agreement(s) entered into by the website owner. All other parties are 
+		 * explicitly restricted from using the Licensed Webfonts(s).
+		 * 
+		 * You may obtain a valid license at the URLs below.
+		 * 
+		 * Webfont: AracneStampReg by Antipixel
+		 * URL: http://www.myfonts.com/fonts/antipixel/aracne/stamp-regular/
+		 * Copyright: Copyright (c) 2014 by Julia Martinez Diana, Antipixel. All rights
+		 * reserved.
+		 * Licensed pageviews: 20,000
+		 * 
+		 * 
+		 * License: http://www.myfonts.com/viewlicense?type=web&buildid=3077003
+		 * 
+		 * © 2015 MyFonts Inc
+		*/
+	-->
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/MyFontsWebfontsKit.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/materialize.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/animate.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script type="text/javascript">
-	    (function() {
-	        var path = '//easy.myfonts.net/v2/js?sid=229610(font-family=Aracne)&sid=229612(font-family=Aracne+Light)&sid=264533(font-family=Aracne+Stamp)&key=JIldsgJFxr',
-	            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-	            trial = document.createElement('script');
-	        trial.type = 'text/javascript';
-	        trial.async = true;
-	        trial.src = protocol + path;
-	        var head = document.getElementsByTagName("head")[0];
-	        head.appendChild(trial);
-	    })();
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-66461601-1', 'auto');
+		ga('send', 'pageview');
+
 	</script>
 	<?php wp_head() ?>
 </head>
@@ -50,19 +72,29 @@
 			      	</ul>
 			      	<ul id="dropdown1" class="dropdown-content">
 					  	<li>
-			              	<a href="#!">Camping with Kids</a>
+			              	<a href="<?= cc_get_cat_link('camping-with-kids'); ?>">
+			              		Camping with Kids
+			              	</a>
 		              	</li>
 			            <li>
-			            	<a href="#!">Local Day Trips</a>
+			            	<a href="<?= cc_get_cat_link('local-day-trips'); ?>">
+			            		Local Day Trips
+			            	</a>
 			            </li>
 			            <li>
-			              	<a href="#!">Destinations</a>
+			              	<a href="<?= cc_get_cat_link('destinations'); ?>">
+			              		Destinations
+			              	</a>
 			            </li>
 			            <li>
-			              	<a href="#!">Adventure Mom Life</a>
+			              	<a href="<?= cc_get_cat_link('adventure-mom-life'); ?>">
+			              		Adventure Mom Life
+			              	</a>
 			            </li>
 			            <li>
-			              	<a href="#!">Projects, Recipes, &amp; Products</a>
+			              	<a href="<?= cc_get_cat_link('projects-recipes-and-products'); ?>">
+			              		Projects, Recipes, &amp; Products
+			              	</a>
 			            </li>
 					</ul>
 		      	</div>
@@ -74,7 +106,10 @@
 			<div class="nav-wrapper">
 				<div class="brand left">
 					<a href="<?= get_home_url(); ?>">
+						<!--
 						Crayons&thinsp;<span class="amp">&amp;</span>&thinsp;Cairns
+						-->
+						<img src="<?php bloginfo('template_url'); ?>/images/mobile_logo.png">
 					</a>
 		      	</div>
 		      	<a href="#" data-activates="mobile-nav-links" class="button-collapse orange-text text-darken-2">
@@ -90,19 +125,29 @@
 				          <div class="collapsible-body">
 				            <ul>
 				              	<li>
-					              	<a href="#!">Camping with Kids</a>
+					              	<a href="<?= cc_get_cat_link('camping-with-kids'); ?>">
+					              		Camping with Kids
+					              	</a>
 				              	</li>
 					            <li>
-					            	<a href="#!">Local Day Trips</a>
+					            	<a href="<?= cc_get_cat_link('local-day-trips'); ?>">
+					            		Local Day Trips
+					            	</a>
 					            </li>
 					            <li>
-					              	<a href="#!">Destinations</a>
+					              	<a href="<?= cc_get_cat_link('destinations'); ?>">
+					              		Destinations
+					              	</a>
 					            </li>
 					            <li>
-					              	<a href="#!">Adventure Mom Life</a>
+					              	<a href="<?= cc_get_cat_link('adventure-mom-life'); ?>">
+					              		Adventure Mom Life
+					              	</a>
 					            </li>
 					            <li>
-					              	<a href="#!">Projects, Recipes, &amp; Products</a>
+					              	<a href="<?= cc_get_cat_link('projects-recipes-and-products'); ?>">
+					              		Projects, Recipes, &amp; Products
+					              	</a>
 					            </li>
 				            </ul>
 				          </div>
@@ -128,7 +173,7 @@
 		    </div>
 	    	<p>
 	      		Thanks for joining us for our site launch! To celebrate our launch, 
-	      		we're doing an awesome giveaway! Be sure to click <a href="">here</a> 
+	      		we're doing an awesome giveaway! Be sure to click <a href="http://www.crayonsandcairns.com/giveaway/">here</a> 
 	      		for all the details.
 	    	</p>
 	    </div>
